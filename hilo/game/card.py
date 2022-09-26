@@ -1,39 +1,29 @@
 import random
-#from random import randint
 
 
-# TODO: Implement the Card class as follows...
-
-# 1) Add the class declaration. Use the following class comment.
 class Card:
-    """A small cube with a different number of spots on each of its six sides.
+    """A piece of paper that has a number printed on it.
 
-    The responsibility of Die is to keep track of the side facing up and calculate the points for 
-    it.
-   
+    The responsibility of the Card is to generate a value to display.
+
     Attributes:
-        value (int): The number of spots on the side facing up.
-        points (int): The number of points the die is worth.
+        value (int): The number of the card.
     """
 
-# 2) Create the class constructor. Use the following method comment.
     def __init__(self):
-        """Constructs a new instance of Die with a value and points attribute.
+        """Constructs a new instance of Card with a value attribute.
 
         Args:
-            self (Die): An instance of Die.
+            self (Card): An instance of Card.
         """
         self.value = 0
-       
-# 3) Create the roll(self) method. Use the following method comment.
-    def draw_card(self): 
-        """Generates a new random value and calculates the points.
-        
+
+    def draw_card(self):
+        """Generates a new random value.
+
         Args:
-            self (Die): An instance of Die.
+            self (Card): An instance of Card.
         """
 
         self.value = random.randint(1, 13)
         return self.value
-
-        
