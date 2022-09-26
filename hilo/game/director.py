@@ -7,7 +7,6 @@ class Director:
     The responsibility of a Director is to control the sequence of play.
 
     Attributes:
-        SELFCARD
         is_playing (boolean): Whether or not the game is being played.
         guess (string) : Wheter the player choose a higher or lower number.
         score (int): The score for one round of play.
